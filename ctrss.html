@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sainath Balaji College - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .navbar {
+            background: rgba(44, 62, 80, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1400&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 40px;
+            border-radius: 0 0 20px 20px;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 0;
+        }
+        .campus-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .gallery-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-card-content {
+            padding: 25px;
+            text-align: center;
+        }
+        .gallery-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .why-choose-section {
+            background: rgba(255,255,255,0.95);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .why-choose-section h2 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .features-list li {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 15px;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(52,152,219,0.3);
+        }
+        .stats-section {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stat-item h3 {
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .section-divider {
+            width: 80%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #3498db, transparent);
+            margin: 40px auto;
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .hero { padding: 60px 20px; }
+            .why-choose-section { padding: 40px 20px; }
+            .campus-gallery { grid-template-columns: 1fr; }
+            .nav-links { gap: 15px; }
+            .nav-links a { padding: 8px 15px; font-size: 14px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🌟 Welcome to Sainath Balaji College</h1>
+            <p>Your future will shine brighter here! Established in 2000, AICTE approved engineering college.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Campus Gallery Section -->
+        <section style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #2c3e50; margin-bottom: 40px; font-size: 2.5em;">Our State-of-the-Art Campus</h2>
+            <div class="campus-gallery">
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop" alt="Modern Infrastructure">
+                    <div class="gallery-card-content">
+                        <h3>Modern Infrastructure</h3>
+                        <p>World-class labs, smart classrooms with LCD projectors, high-speed WiFi, and advanced research facilities across 25 acres campus.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=250&fit=crop" alt="Digital Library">
+                    <div class="gallery-card-content">
+                        <h3>Digital Library</h3>
+                        <p>24/7 accessible digital library with 50,000+ books, international journals, e-resources, and dedicated research sections.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="Sports Complex">
+                    <div class="gallery-card-content">
+                        <h3>Sports Complex</h3>
+                        <p>Olympic-size facilities including basketball courts, cricket ground, gym, indoor games, and annual sports festivals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-section">
+            <h2>Why Choose Sainath Balaji College?</h2>
+            <ul class="features-list">
+                <li>Qualified and Experienced Staff - 200+ PhD faculty</li>
+                <li>Modern Infrastructure - 3000+ students placed</li>
+                <li>Excellent Placement Record - 95% placement rate</li>
+                <li>Student-Friendly Environment - 25 years legacy</li>
+            </ul>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>3000+</h3>
+                    <p>Campus Placements</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25</h3>
+                    <p>Years Legacy</p>
+                </div>
+                <div class="stat-item">
+                    <h3>B.Tech | M.Tech | MCA</h3>
+                    <p>Programs Offered</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
